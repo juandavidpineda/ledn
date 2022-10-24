@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "081d780f-9d42-4e89-afb9-a7ca7b61d3c9",
+		"name": "Ledn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Juan\",\n    \"lastName\": \"Pineda\",\n    \"country\": \"CO\",\n    \"email\": \"juan2@gmail.com\",\n    \"dob\": \"1990-01-23T09:07:59.209Z\",\n    \"mfa\": null,\n    \"createdAt\": \"2020-02-10T10:04:33.785Z\",\n    \"updatedAt\": \"2020-02-10T10:04:33.785Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4302/api/account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4302",
+							"path": [
+								"api",
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4302/api/account/Luna.Hansen89@hotmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4302",
+							"path": [
+								"api",
+								"account",
+								"Luna.Hansen89@hotmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET  Balance /email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4302/api/account/juan1@gmail.com/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4302",
+							"path": [
+								"api",
+								"account",
+								"juan1@gmail.com",
+								"balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Post Transfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"fromEmail\": \"juan2@gmail.com\",\n  \"toEmail\": \"juan1@gmail.com\",\n  \"amount\": 2000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4302/api/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4302",
+							"path": [
+								"api",
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
