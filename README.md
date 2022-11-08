@@ -78,10 +78,3 @@ Estimated effort to complete this challenge is 4-5 hours.
 Upon submission of the challenge, we will review your code and reach out to you with comments. If your submission passes our criteria, a following interview will be scheduled to discuss your implementation in further detail. We feel this is another great way to assess your understanding rather than on the spot coding exercises!
 
 We want you to succeed as much as you do, so we wish you the best of luck! Looking forward to your submission!
-
-
-
-
-mongoimport --collection accounts --file ./sample-data/accounts-api-large.json --jsonArray -uri "mongodb+srv://ledn.cwpuccd.mongodb.net/ledndb" --username jdpa --password YXJqQpFItK0nUPXh
-
-mongoimport --collection transactions --file ./sample-data/transactions-api-large.json --jsonArray -uri "mongodb+srv://ledn.cwpuccd.mongodb.net/ledndb" --username jdpa --password YXJqQpFItK0nUPXh
