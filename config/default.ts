@@ -1,5 +1,5 @@
 export default {
-  dbUri: 'mongodb+srv://jdpa:YXJqQpFItK0nUPXh@ledn.cwpuccd.mongodb.net/ledndb?retryWrites=true&w=majority',
+  dbUri: '',
   host: 'localhost',
   port: 4302,
 };
